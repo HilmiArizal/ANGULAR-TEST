@@ -1,0 +1,63 @@
+.body-register{
+    min-height: 100vh;
+    animation: name;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+.card-skill:hover{
+    opacity: 0.5;
+}
+
+.card-name{
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 2%;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+
+.container-img{
+    position: relative;
+    // width: 50%;
+}
+
+.hilmi-img{
+    opacity: 1;
+    transition: 0.5s ease;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-skill{
+    transition: 0.5s ease;
+    opacity: 0;
+    cursor: pointer;
+    width: 50%;
+    // margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+ }
+
+ .container-img:hover .card-skill{
+    opacity: 1;
+ }
+
+.container-img:hover .hilmi-img{
+    opacity: 0.5;
+}
+
+.modal-title{
+    font-weight: bold;
+    font-size: 150%;
+}
+
+@keyframes name{
+    0%{
+        opacity: 0;
+    }
+}

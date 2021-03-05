@@ -1,0 +1,38 @@
+.body-app{
+    background-image: url('../assets/images/programmer.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 1em;
+}
+
+.example-spacer{
+    flex: 1 1 auto;
+}
+
+.account-icon{
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.account-icon:hover{
+    opacity: 0.5;
+}
+
+.dropdown-menu.show{
+    padding: 1em;
+    text-align: center;
+}
+
+.item-dropdown:hover{
+    background-color: grey;
+}
+
+.login-item, .register-item{
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.login-item:hover, .register-item:hover{
+    background-color: grey;
+}
