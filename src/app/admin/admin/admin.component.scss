@@ -1,3 +1,55 @@
-.body-admin{
-    min-height: 100vh;
-}
+.example-container {
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    // padding: 1em;
+  }
+
+  .example-sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+  }
+  .sidenav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    background-color: #d4d3d3;
+  }
+
+  .account-admin-img{
+      width: 70%;
+      border-radius: 100%;
+      margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+  .list-admin-page li{
+      text-align: left;
+      font-weight: 500;
+      padding: 3%;
+      transition: 0.5s ease;
+      cursor: pointer;
+  }
+
+  .list-admin-page li:hover{
+    background-color: #3F51B5;
+    color: #ffffff;
+  }
+
+  .item-list{
+    display: flex;
+  }
+
+  .item-list label{
+      margin-top: 1%;
+      margin-left: 3%;
+  }
+
+  .item-list:focus{
+      outline: 0;
+  }

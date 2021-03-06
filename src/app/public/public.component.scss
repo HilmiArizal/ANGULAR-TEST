@@ -1,3 +1,21 @@
 .body-public{
     min-height: 100vh;
 }
+
+.go-home{
+    text-decoration: underline;
+    font-size: 150%;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-bottom: 3%;
+}
+
+.go-home:hover{
+    color: rgb(81, 81, 216);
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.go-home:focus{
+    outline: 0;
+}

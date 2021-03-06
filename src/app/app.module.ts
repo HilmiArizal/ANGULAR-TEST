@@ -21,7 +21,7 @@ import { MaterialDesign } from './material-ui/material';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    MaterialDesign
+    MaterialDesign,
   ],
   providers: [],
   bootstrap: [AppComponent]

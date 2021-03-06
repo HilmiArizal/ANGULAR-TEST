@@ -3,7 +3,15 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    padding: 1em;
+    // padding: 1em;
+    min-height: 100vh;
+}
+
+#app-toolbar {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
 }
 
 .example-spacer{
