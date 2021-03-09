@@ -1,0 +1,39 @@
+.body-users{
+    padding: 2em;
+}
+
+.title-users{
+    font-size: 150%;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.action-users{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.edit-users{
+    background-color:#7eb53f;
+    color: #ffffff;
+    width: 40%;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.delete-users{
+    background-color: #b5473f;
+    color: #ffffff;
+    width: 40%;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.add-users{
+    background-color: #3F51B5;
+    color: #ffffff;
+    width: 40%;
+    margin: auto;
+    border-radius: 2px;
+    cursor: pointer;
+}

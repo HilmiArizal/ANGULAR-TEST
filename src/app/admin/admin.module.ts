@@ -6,6 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialDesign } from '../material-ui/material';
 import { UsersComponent } from './users/users.component';
 import { ManageComponent } from './manage/manage.component';
+import {FormsModule} from '@angular/forms';
+import { EditComponent } from './users/edit/edit.component';
 
 const routes: Routes = [
   {
@@ -29,11 +31,12 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [AdminComponent, DashboardComponent, UsersComponent, ManageComponent],
+  declarations: [AdminComponent, DashboardComponent, UsersComponent, ManageComponent, EditComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    MaterialDesign
+    MaterialDesign,
+    FormsModule
   ]
 })
 export class AdminModule { }

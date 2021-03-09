@@ -1,1 +1,38 @@
-<h3>USERS PAGE</h3>
+<div class="body-users">
+  <div class="title-users">MANAGE USERS</div>
+  <table class="table table-md">
+    <thead style="background-color: #3F51B5; color: #ffffff;">
+      <tr>
+        <th scope="col">No.</th>
+        <th scope="col">Firstname</th>
+        <th scope="col">Lastname</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let items of dataUsers; index as i">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{items.firstname}}</td>
+        <td>{{items.lastname}}</td>
+        <td>
+          <div class="action-users">
+            <div class="edit-users" (click)=onEditUser(items,i)>Edit</div>
+            <div class="delete-users" (click)="onDeleteUser(i)">Delete</div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row"></th>
+        <td><input type="text" [(ngModel)]="firstname" (keyup.enter)="onAddUser()"> </td>
+        <td><input type="text" [(ngModel)]="lastname" (keyup.enter)="onAddUser()"> </td>
+        <td>
+          <div class="add-users" (click)="onAddUser()">Add</div>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+</div>

@@ -8,6 +8,8 @@ import { RegisterComponent } from './auth/register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MaterialDesign } from './material-ui/material';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -22,6 +24,7 @@ import { MaterialDesign } from './material-ui/material';
     BrowserAnimationsModule,
     NgbModule,
     MaterialDesign,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,10 +8,31 @@ import * as AOS from 'aos';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  clickMessage = '';
+  username = '';
+  password = '';
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
-    AOS.init();
   }
+
+  onClickMe() {
+    let username = this.username;
+    let password = this.password;
+    let data = { username, password};
+    console.log(data)
+  }
+
+  onKeyUsername(e: any) {
+    this.username = e.target.value;
+  }
+
+  onKeyPassword(e: any) {
+    this.password = e.target.value;
+  }
+
 
 }

@@ -4,22 +4,22 @@
       <div class="title-card">REGISTER</div>
       <br />
       <form class="form-register">
-        <div>
-          <label>Email</label>
-          <input type="email" class="form-control">
-        </div>
-        <div>
-          <label>Username</label>
-          <input type="text" class="form-control">
-        </div>
-        <div>
-          <label>Password</label>
-          <input type="password" class="form-control">
-        </div>
-        <div>
-          <label>Confirm Password</label>
-          <input type="password" class="form-control">
-        </div>
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Username</mat-label>
+          <input matInput >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Confirm Password</mat-label>
+          <input matInput type="password">
+        </mat-form-field>
         <hr/>
         <div class="d-flex justify-content-between">
           <div class="create-account" routerLink="/login">Have Account</div>

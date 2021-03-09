@@ -1,0 +1,15 @@
+
+<div mat-dialog-content>
+    <label>Firstname</label>
+    <div>
+        <input type="text" placeholder="{{data.firstname}}" [(ngModel)]="firstname" (keyup.enter)="onSubmit()">
+    </div>
+    <br/>
+    <label>Lastname</label>
+    <div>
+        <input type="text" placeholder="{{data.lastname}}" [(ngModel)]="lastname" (keyup.enter)="onSubmit()">
+    </div>
+    <div>
+        <button class="btn btn-primary btn-sm" (click)="onSubmit()">SUBMIT</button>
+    </div>
+</div>

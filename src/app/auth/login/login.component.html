@@ -1,23 +1,25 @@
 <div class="container-fluid align-items-center justify-content-center d-flex" id="body-login">
-    <div class="col-4">
-      <mat-card class="card-login">
-        <div class="title-card">LOGIN</div>
-        <br />
-        <form class="form-login">
-          <div>
-            <label>Username</label>
-            <input type="text" class="form-control">
-          </div>
-          <div>
-            <label>Password</label>
-            <input type="text" class="form-control">
-          </div>
-          <hr/>
-          <div class="d-flex justify-content-between">
-            <div class="create-account" routerLink="/register">Create Account!</div>
-            <div class="btn btn-primary btn-sm">Login</div>
-          </div>
-        </form>
-      </mat-card>
+  <div class="col-4">
+    <mat-card class="card-login">
+      <div class="title-card">LOGIN</div>
+      <br />
+      <form class="form-login">
+        <mat-form-field class="example-full-width">
+          <mat-label>Username</mat-label>
+          <input matInput (keyup)="onKeyUsername($event)" autocomplete="off" (keyup.enter)="onClickMe()">
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+          <mat-label>Password</mat-label>
+          <input matInput (keyup)="onKeyPassword($event)" autocomplete="off" (keyup.enter)="onClickMe()"> 
+        </mat-form-field>
+        <hr />
+        <div class="d-flex justify-content-between">
+          <div class="create-account" routerLink="/register">Create Account!</div>
+          <div class="btn btn-primary btn-sm" (click)="onClickMe()">Login</div>
+          {{clickMessage}}
+        </div>
+      </form>
+    </mat-card>
   </div>
 </div>

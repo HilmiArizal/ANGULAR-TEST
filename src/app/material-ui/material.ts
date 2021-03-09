@@ -28,6 +28,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
+// import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 
 export const MaterialDesign = [
@@ -61,5 +62,8 @@ export const MaterialDesign = [
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    // MatDialog,
+    // MatDialogRef,
+    // MAT_DIALOG_DATA
 ]
